@@ -5,18 +5,38 @@ import { useState } from "react";
 
 const FOOTER_LINKS = {
   products: [
-    { label: "Threat Forge", href: "/products/threat-forge" },
-    { label: "Kinnections", href: "/products/kinnections" },
-    { label: "Geo Spot", href: "/products/geo-spot" },
+    {
+      label: "Threat Forge",
+      href: "/products/threat-forge",
+      hoverColor: "hover:text-forge",
+    },
+    {
+      label: "Kinnections",
+      href: "/products/kinnections",
+      hoverColor: "hover:text-ember",
+    },
+    {
+      label: "Geo Spot",
+      href: "/products/geo-spot",
+      hoverColor: "hover:text-signal",
+    },
   ],
   company: [
-    { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
+    { label: "About", href: "/about", hoverColor: "hover:text-white" },
+    { label: "Contact", href: "/contact", hoverColor: "hover:text-white" },
   ],
   legal: [
-    { label: "Privacy", href: "/legal/privacy" },
-    { label: "Terms", href: "/legal/terms" },
-    { label: "Refund Policy", href: "/legal/refund" },
+    {
+      label: "Privacy",
+      href: "/legal/privacy",
+      hoverColor: "hover:text-white",
+    },
+    { label: "Terms", href: "/legal/terms", hoverColor: "hover:text-white" },
+    {
+      label: "Refund Policy",
+      href: "/legal/refund",
+      hoverColor: "hover:text-white",
+    },
   ],
 } as const;
 
@@ -25,7 +45,7 @@ export function Footer() {
 
   return (
     <footer className="bg-zero px-6 py-12 md:py-16">
-      <div className="mx-auto max-w-300">
+      <div className="mx-auto max-w-[1200px]">
         {/* Link groups */}
         <div className="grid grid-cols-2 gap-8 md:grid-cols-4">
           {/* Wordmark */}
@@ -51,7 +71,7 @@ export function Footer() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="font-body text-sm text-mist transition-colors hover:text-white"
+                  className={`font-body text-sm text-mist transition-colors ${link.hoverColor}`}
                 >
                   {link.label}
                 </Link>
@@ -69,7 +89,7 @@ export function Footer() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="font-body text-sm text-mist transition-colors hover:text-white"
+                  className={`font-body text-sm text-mist transition-colors ${link.hoverColor}`}
                 >
                   {link.label}
                 </Link>
@@ -87,7 +107,7 @@ export function Footer() {
                 <Link
                   key={link.label}
                   href={link.href}
-                  className="font-body text-sm text-mist transition-colors hover:text-white"
+                  className={`font-body text-sm text-mist transition-colors ${link.hoverColor}`}
                 >
                   {link.label}
                 </Link>
@@ -97,7 +117,12 @@ export function Footer() {
         </div>
 
         {/* Divider + copyright */}
-        <div className="mt-12 border-t border-dusk pt-8 text-center md:text-left">
+        <div className="mt-12 border-t border-dusk pt-8">
+          {/* Stack line */}
+          <p className="font-mono text-[11px] text-mist/30 mb-3">
+            &gt; built with Next.js, Tauri, Three.js, and unreasonable standards
+          </p>
+
           <p className="font-body text-sm text-mist">
             &copy; 2026 Exit{" "}
             <button

@@ -109,7 +109,7 @@ export default function AboutPage() {
           name="Shreyas"
           jobTitle="Founder & Developer"
           bio="Full-stack developer building tools that respect the people who use them. Threat Forge started as frustration with the gap between free-but-ancient and enterprise-locked threat modeling tools. Kinnections came from wanting relationship management that treated private data as yours, not as a business model. Geo Spot came from a love of geography and a dislike of ad-supported games. All three are built with the same philosophy: your data is yours, the software should work, and nobody needs to see ads."
-          linkedIn="https://linkedin.com/in/shreyas"
+          linkedIn="https://linkedin.com/in/shreyassane"
           className="mt-8 max-w-xl"
         />
       </section>

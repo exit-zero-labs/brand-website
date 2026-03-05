@@ -8,7 +8,7 @@ const LINKS = [
     label: "Threat Forge",
     href: "#products",
     color:
-      "hover:border-forge/60 hover:text-forge hover:shadow-[0_0_16px_rgba(99,102,241,0.25)]",
+      "hover:border-forge/60 hover:text-forge hover:shadow-[0_0_16px_rgba(0,196,255,0.25)]",
   },
   {
     emoji: "🌐",

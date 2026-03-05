@@ -29,26 +29,27 @@ export function ThreatForgeSection() {
     <SectionWrapper
       id="products"
       ariaLabel="Threat Forge — open-source threat modeling tool"
-      className="relative overflow-hidden bg-dusk"
+      className="relative overflow-hidden"
+      style={{ backgroundColor: "#0d1117" }}
     >
-      {/* Subtle forge accent */}
+      {/* Subtle forge cyan ambient glow — top left */}
       <div
         className="pointer-events-none absolute -left-32 -top-32 h-[500px] w-[500px] rounded-full"
         style={{
           background:
-            "radial-gradient(circle, rgba(99,102,241,0.05) 0%, transparent 70%)",
+            "radial-gradient(circle, rgba(0,196,255,0.06) 0%, transparent 70%)",
         }}
         aria-hidden="true"
       />
 
-      {/* Section divider */}
+      {/* Section divider — top edge */}
       <motion.div
-        className="absolute top-0 left-0 right-0 h-px bg-forge/20"
+        className="absolute top-0 left-0 right-0 h-px"
+        style={{ background: "rgba(0,196,255,0.15)", transformOrigin: "left" }}
         initial={{ scaleX: 0 }}
         whileInView={{ scaleX: 1 }}
         viewport={{ once: true }}
         transition={{ duration: 0.8, ease: "easeOut" }}
-        style={{ transformOrigin: "left" }}
         aria-hidden="true"
       />
 
@@ -64,7 +65,6 @@ export function ThreatForgeSection() {
               : { opacity: 0, x: -40, filter: "blur(4px)" }
           }
           transition={{ type: "spring", stiffness: 80, damping: 20 }}
-          style={{ transition: "filter 0.6s ease" }}
         >
           <ThreatForgeMockup />
         </motion.div>
@@ -117,7 +117,7 @@ export function ThreatForgeSection() {
               <Button
                 variant="solid"
                 href="https://threatforge.dev"
-                className="bg-forge hover:shadow-[0_0_20px_rgba(99,102,241,0.35)] text-white"
+                className="bg-forge hover:shadow-[0_0_20px_rgba(0,196,255,0.35)] text-zero font-semibold"
               >
                 Download free
               </Button>

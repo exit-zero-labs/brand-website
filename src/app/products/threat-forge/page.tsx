@@ -148,7 +148,13 @@ export default function ThreatForgePage() {
         aria-label="Open Source"
         className="mx-auto max-w-[1200px] px-4 sm:px-6 pt-20 md:pt-28"
       >
-        <div className="rounded-lg border border-forge/20 bg-forge/5 p-8 md:p-10">
+        <div
+          className="rounded-lg p-8 md:p-10"
+          style={{
+            border: "1px solid rgba(0,196,255,0.18)",
+            background: "rgba(0,196,255,0.04)",
+          }}
+        >
           <h2 className="font-display text-2xl font-bold text-forge md:text-3xl">
             Free and open source. Always.
           </h2>
@@ -182,7 +188,11 @@ export default function ThreatForgePage() {
             </p>
           </div>
           <div className="flex flex-col gap-4">
-            <Button variant="solid" href="https://threatforge.dev">
+            <Button
+              variant="solid"
+              href="https://threatforge.dev"
+              className="bg-forge text-zero font-semibold hover:shadow-[0_0_20px_rgba(0,196,255,0.3)]"
+            >
               Download Threat Forge
             </Button>
             <Button

@@ -1,7 +1,8 @@
 import { ImageResponse } from "next/og";
 
 export const runtime = "edge";
-export const alt = "Exit Zero Labs — Ship clean. Build forward.";
+export const alt =
+  "Threat Forge — Open-Source Threat Modeling by Exit Zero Labs";
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
@@ -31,16 +32,16 @@ export default function Image() {
             width: "48px",
             height: "48px",
             borderRadius: "8px",
-            background: "#00D97E",
+            background: "#6366F1",
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
             fontSize: "24px",
             fontWeight: 700,
-            color: "#0A0F1E",
+            color: "white",
           }}
         >
-          {"0"}
+          {"⚒"}
         </div>
         <span
           style={{
@@ -51,19 +52,20 @@ export default function Image() {
             textTransform: "uppercase",
           }}
         >
-          Exit Zero Labs
+          Threat Forge
         </span>
       </div>
       <div
         style={{
-          fontSize: "64px",
+          fontSize: "56px",
           fontWeight: 700,
           color: "#FAFAF8",
           lineHeight: 1.1,
           maxWidth: "900px",
         }}
       >
-        Ship clean. <span style={{ color: "#00D97E" }}>Build forward.</span>
+        Model threats{" "}
+        <span style={{ color: "#6366F1" }}>before they model you.</span>
       </div>
       <div
         style={{
@@ -73,8 +75,8 @@ export default function Image() {
           maxWidth: "700px",
         }}
       >
-        Indie software, made with care. Makers of Threat Forge, Kinnections,
-        and Geo Spot.
+        Open-source threat modeling. STRIDE analysis, AI-assisted threats,
+        git-friendly YAML. Free forever.
       </div>
     </div>,
     { width: 1200, height: 630 },

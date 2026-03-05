@@ -38,11 +38,11 @@ export const metadata: Metadata = {
     template: "%s | Exit Zero Labs",
   },
   description:
-    "Indie software, made with care. Makers of Kinnections and Geo Spot. Built by Exit Zero Labs.",
+    "Indie software, made with care. Makers of Threat Forge, Kinnections, and Geo Spot. Built by Exit Zero Labs.",
   openGraph: {
     title: "Exit Zero Labs — Ship clean. Build forward.",
     description:
-      "Indie software, made with care. Makers of Kinnections and Geo Spot.",
+      "Indie software, made with care. Makers of Threat Forge, Kinnections, and Geo Spot.",
     siteName: "Exit Zero Labs",
     type: "website",
     url: "https://exitzerolabs.com",
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Exit Zero Labs — Ship clean. Build forward.",
     description:
-      "Indie software, made with care. Makers of Kinnections and Geo Spot.",
+      "Indie software, made with care. Makers of Threat Forge, Kinnections, and Geo Spot.",
     images: ["/opengraph-image"],
   },
   alternates: {
@@ -94,9 +94,12 @@ export default function RootLayout({
               name: "Exit Zero Labs",
               url: "https://exitzerolabs.com",
               description:
-                "Indie software company building privacy-first tools. Makers of Kinnections and Geo Spot.",
+                "Indie software company building privacy-first tools. Makers of Threat Forge, Kinnections, and Geo Spot.",
               foundingDate: "2024",
-              sameAs: ["https://kinnections.app"],
+              sameAs: [
+                "https://threatforge.dev",
+                "https://kinnections.app",
+              ],
             }),
           }}
         />

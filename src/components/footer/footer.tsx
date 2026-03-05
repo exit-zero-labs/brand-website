@@ -5,6 +5,7 @@ import { useState } from "react";
 
 const FOOTER_LINKS = {
   products: [
+    { label: "Threat Forge", href: "/products/threat-forge" },
     { label: "Kinnections", href: "/products/kinnections" },
     { label: "Geo Spot", href: "/products/geo-spot" },
   ],

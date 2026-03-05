@@ -9,7 +9,7 @@ type PageHeaderProps = {
   subtitle?: string;
   badge?: {
     text: string;
-    color: "ember" | "signal";
+    color: "ember" | "signal" | "forge" | "forge";
   };
   className?: string;
 };

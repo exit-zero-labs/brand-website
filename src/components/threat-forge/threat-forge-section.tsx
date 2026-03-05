@@ -8,7 +8,7 @@ import { SectionWrapper } from "@/components/ui/section-wrapper";
 export function ThreatForgeSection() {
   return (
     <SectionWrapper
-      id="threat-forge"
+      id="products"
       ariaLabel="Threat Forge — threat modeling tool"
       className="bg-dusk"
     >

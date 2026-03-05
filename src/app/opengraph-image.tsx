@@ -73,8 +73,8 @@ export default function Image() {
           maxWidth: "700px",
         }}
       >
-        Indie software, made with care. Makers of Threat Forge, Kinnections,
-        and Geo Spot.
+        Indie software, made with care. Makers of Threat Forge, Kinnections, and
+        Geo Spot.
       </div>
     </div>,
     { width: 1200, height: 630 },

@@ -9,7 +9,7 @@ import { TiltCard } from "./tilt-card";
 export function KinnectionsSection() {
   return (
     <SectionWrapper
-      id="products"
+      id="kinnections"
       ariaLabel="Kinnections — relationship mapper"
       className="bg-dusk"
     >

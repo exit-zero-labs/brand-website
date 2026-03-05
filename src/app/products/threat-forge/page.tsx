@@ -137,8 +137,8 @@ export default function ThreatForgePage() {
         </h2>
         <p className="mt-3 max-w-lg font-body text-lg text-mist">
           Most threat modeling tools are either enterprise-locked or stuck in
-          2016. Threat Forge fills the gap with a modern UI, clean file
-          format, and AI assistance — no procurement cycle required.
+          2016. Threat Forge fills the gap with a modern UI, clean file format,
+          and AI assistance — no procurement cycle required.
         </p>
         <FeatureGrid features={FEATURES} className="mt-10" />
       </section>

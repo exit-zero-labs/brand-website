@@ -96,10 +96,7 @@ export default function RootLayout({
               description:
                 "Indie software company building privacy-first tools. Makers of Threat Forge, Kinnections, and Geo Spot.",
               foundingDate: "2024",
-              sameAs: [
-                "https://threatforge.dev",
-                "https://kinnections.app",
-              ],
+              sameAs: ["https://threatforge.dev", "https://kinnections.app"],
             }),
           }}
         />
